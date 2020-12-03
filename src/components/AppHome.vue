@@ -1,4 +1,3 @@
-/* Have the second div change information based on which button is clicked. Rotate the information in the projects div carousel style, UNLESS a project is clicked, then make it static. Should be able to set up two variables, one that has the information that is looped over, and one that starts empty, when it is filled, hide the div containing the loop. */
 <template>
     <div>
         <div class="border border-gray-400 h-auto m-4 flex flex-col items-center">
@@ -17,9 +16,22 @@
             <section class="p-2">Click a category to learn more about me!</section>
         </div>
         <div>
-            <div class="border border-gray-400 h-auto m-4 p-4 text-center" v-if="Technologies">
+            <div class="border border-gray-400 h-auto m-4 p-2 text-center" v-if="Technologies">
                 <h3>Technologies</h3>
-                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam pariatur vero deserunt dolorem rem repellat. Ipsam corporis sit corrupti excepturi aut commodi. Necessitatibus repellat sapiente magni nobis ipsa consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat harum esse dolores perferendis minus quo tempore est illo dolor corrupti commodi eum fugit fugiat voluptates. Exercitationem molestiae libero accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est iure ipsum repellendus dolor enim, id mollitia consectetur excepturi, doloribus sequi voluptate ratione! Magnam nulla labore repellat, repellendus eaque veritatis eum.</section>
+                <div class="m-1 grid grid-rows-3 grid-cols-4">
+                    <div class="tech row-start-1 col-start-1"></div>
+                    <div class="tech row-start-1 col-start-2"></div>
+                    <div class="tech row-start-1 col-start-3"></div>
+                    <div class="tech row-start-1 col-start-4"></div>
+                    <div class="tech row-start-2 col-start-1"></div>
+                    <div class="tech row-start-2 col-start-2"></div>
+                    <div class="tech row-start-2 col-start-3"></div>
+                    <div class="tech row-start-2 col-start-4"></div>
+                    <div class="tech row-start-3 col-start-1"></div>
+                    <div class="tech row-start-3 col-start-2"></div>
+                    <div class="tech row-start-3 col-start-3"></div>
+                    <div class="tech row-start-3 col-start-4"></div>
+                </div>
             </div>
             <div class="border border-gray-400 h-auto m-4 p-4 text-center" v-if="Hobbies">
                 <h3>Hobbies</h3>
@@ -77,6 +89,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'AppHome',
     data () {
@@ -96,7 +109,6 @@ export default {
            else if (this.DisplayRotatedProjects !== 0) {
                this.DisplayRotatedProjects = 1
            }
-           console.log(this.DisplayRotatedProjects)
        }, 5000)
     },
     methods: {
@@ -121,6 +133,11 @@ export default {
         },
         restartRotatingProjects () {
             this.DisplayRotatedProjects = 1
+            this.DisplayStaticProject = 0
+        },
+        visibilityChanged (isVisible, entry) {
+            this.isVisible = isVisible
+            console.log(entry)
         }
     }
 }
@@ -132,5 +149,8 @@ export default {
     }
     .projects {
         @apply border border-gray-400 h-16 w-36 m-2
+    }
+    .tech {
+        @apply border border-gray-400 h-16 w-16 m-2 justify-self-center
     }
 </style>
