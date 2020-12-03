@@ -29,6 +29,16 @@
                 <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
             </div>
         </div>
+        <div class="border border-gray-400 m-4 grid grid-rows-7 grid-cols-2">
+            <section class="border border-gray-400 m-2 row-start-1 row-end-7 col-start-2 col-end-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam aperiam iusto, ipsa repudiandae velit est cupiditate magni cum enim! Est quae nam eum, ad ipsum magnam mollitia magni quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum debitis officia nihil commodi praesentium.</section>
+            <label class="border border-gray-400 h-12 w-auto row-start-1 col-start-1 m-4"></label>
+            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-2 col-start-1">
+            <label class="border border-gray-400 h-12 w-auto row-start-3 col-start-1 m-4"></label>
+            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-4 col-start-1">
+            <label class="border border-gray-400 h-12 w-auto row-start-5 col-start-1 m-4"></label>
+            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-6 col-start-1">
+            <submit class="border border-gray-400 h-12 w-auto m-2 row-start-7 col-start-1 col-span-2"></submit>
+        </div>
     </div>
 </template>
 
