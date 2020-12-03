@@ -33,12 +33,33 @@
         <div class="my-8">
             <section class="text-center">Projects</section>
             <div class="h-24 my-4 flex justify-around items-center">
-                <div class="projects"></div>
-                <div class="projects"></div>
-                <div class="projects"></div>
+                <div class="projects" @click="stopRotatingProjects(1)"></div>
+                <div class="projects" @click="stopRotatingProjects(2)"></div>
+                <div class="projects" @click="stopRotatingProjects(3)"></div>
+                <div class="projects" @click="restartRotatingProjects()">Restart</div>
             </div>
-            <div class="border border-gray-400 h-auto m-4 text-center">
-                <h3>Project Name</h3>
+            <div class="bg-blue-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayRotatedProjects === 1">
+                <h3>{{DisplayRotatedProjects}}</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
+            <div class="bg-green-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayRotatedProjects === 2">
+                <h3>{{DisplayRotatedProjects}}</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
+            <div class="bg-red-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayRotatedProjects === 3">
+                <h3>{{DisplayRotatedProjects}}</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
+            <div class="bg-purple-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayStaticProject === 1">
+                <h3>{{DisplayStaticProject}}</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
+            <div class="bg-yellow-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayStaticProject === 2">
+                <h3>{{DisplayStaticProject}}</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
+            <div class="bg-gray-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayStaticProject === 3">
+                <h3>{{DisplayStaticProject}}</h3>
                 <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
             </div>
         </div>
@@ -62,11 +83,21 @@ export default {
         return {
             Technologies: false,
             Hobbies: false,
-            Life: false
+            Life: false,
+            DisplayRotatedProjects: 1,
+            DisplayStaticProject: 0
         }
     },
     created () {
-       console.log("This will be a fetch statement") 
+       setInterval(() => {
+           if (this.DisplayRotatedProjects !== 3 && this.DisplayRotatedProjects !== 0){
+               this.DisplayRotatedProjects += 1
+           }
+           else if (this.DisplayRotatedProjects !== 0) {
+               this.DisplayRotatedProjects = 1
+           }
+           console.log(this.DisplayRotatedProjects)
+       }, 5000)
     },
     methods: {
         onTechClick () {
@@ -83,6 +114,13 @@ export default {
             this.Technologies = false
             this.Hobbies = false
             this.Life = true
+        },
+        stopRotatingProjects (project) {
+            this.DisplayRotatedProjects = 0
+            this.DisplayStaticProject = project
+        },
+        restartRotatingProjects () {
+            this.DisplayRotatedProjects = 1
         }
     }
 }
