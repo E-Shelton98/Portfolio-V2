@@ -24,7 +24,10 @@
                 <div class="projects"></div>
                 <div class="projects"></div>
             </div>
-            <div class="border border-gray-400 h-auto m-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nulla dolor, esse blanditiis unde facere, inventore eveniet quisquam asperiores iure veritatis voluptatibus illo, sapiente ipsa eos dolore incidunt consequuntur vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat fugiat velit, voluptatem esse sint veritatis vel nostrum eos, nihil ducimus quaerat atque natus. Facere iure itaque molestias reiciendis natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque harum id molestias voluptatum enim necessitatibus nulla, optio ut dolores facilis! Illo aspernatur dolore animi ea cumque nihil deserunt eum.</div>
+            <div class="border border-gray-400 h-auto m-4 text-center">
+                <h3>Project Name</h3>
+                <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsa sint pariatur blanditiis officiis, iusto tempora debitis inventore suscipit ratione magnam saepe molestias consectetur eligendi voluptate sunt eveniet, temporibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo impedit ut nihil at culpa, doloribus voluptas ipsum, in voluptatum voluptate sit ipsam repellat velit natus commodi ipsa? Possimus, repellat quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit voluptatum possimus eum nemo debitis dolore quibusdam doloremque assumenda odio nisi, quis provident? Ipsum tempora inventore distinctio quas perferendis quae odio.</section>
+            </div>
         </div>
     </div>
 </template>
