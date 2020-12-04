@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div class="border border-gray-400 h-auto m-4 flex flex-col items-center">
-            <div class="border border-gray-400 h-32 w-32 my-4 rounded-full">
+    <div class="bg-gradient-to-b from-green-200 via-indigo-400 to-purple-700 p-2">
+        <div class="border-2 border-purple-900 border-opacity-25 h-auto m-4 rounded-lg flex flex-col items-center">
+            <div class="border border-green-400 h-32 w-32 my-4 rounded-full">
 
             </div>
             <div class="h-24 mx-4 text-center">
@@ -9,28 +9,28 @@
                 <h2 class="text-xl">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
             </div>
             <div class="mt-16 mx-1">
-                <button class="btns" @click="onTechClick()">Technologies</button>
-                <button class="btns" @click="onHobbiesClick()">Hobbies</button>
-                <button class="btns" @click="onLifeClick()">Life</button>
+                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onTechClick()">Technologies</button>
+                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
+                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onLifeClick()">Life</button>
             </div>
             <section class="p-2">Click a category to learn more about me!</section>
         </div>
         <div>
-            <div class="border border-gray-400 h-auto m-4 p-2 text-center" v-if="Technologies">
-                <h3>Technologies</h3>
+            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-2" v-if="Technologies">
+                <h3 class="text-center">Technologies</h3>
                 <div class="m-1 grid grid-rows-3 grid-cols-4">
-                    <div class="tech row-start-1 col-start-1"></div>
-                    <div class="tech row-start-1 col-start-2"></div>
-                    <div class="tech row-start-1 col-start-3"></div>
-                    <div class="tech row-start-1 col-start-4"></div>
-                    <div class="tech row-start-2 col-start-1"></div>
-                    <div class="tech row-start-2 col-start-2"></div>
-                    <div class="tech row-start-2 col-start-3"></div>
-                    <div class="tech row-start-2 col-start-4"></div>
-                    <div class="tech row-start-3 col-start-1"></div>
-                    <div class="tech row-start-3 col-start-2"></div>
-                    <div class="tech row-start-3 col-start-3"></div>
-                    <div class="tech row-start-3 col-start-4"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-4"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-1"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-2"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-3"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-4"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-1"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-2"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-3"></div>
+                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-4"></div>
                 </div>
             </div>
             <div class="border border-gray-400 h-auto m-4 p-4 text-center" v-if="Hobbies">
@@ -45,10 +45,10 @@
         <div class="my-8">
             <section class="text-center">Projects</section>
             <div class="h-24 my-4 flex justify-around items-center">
-                <div class="projects" @click="stopRotatingProjects(1)"></div>
-                <div class="projects" @click="stopRotatingProjects(2)"></div>
-                <div class="projects" @click="stopRotatingProjects(3)"></div>
-                <div class="projects" @click="restartRotatingProjects()">Restart</div>
+                <div class="border border-gray-400 h-16 w-36 m-2" @click="stopRotatingProjects(1)"></div>
+                <div class="border border-gray-400 h-16 w-36 m-2" @click="stopRotatingProjects(2)"></div>
+                <div class="border border-gray-400 h-16 w-36 m-2" @click="stopRotatingProjects(3)"></div>
+                <div class="border border-gray-400 h-16 w-36 m-2" @click="restartRotatingProjects()">Restart</div>
             </div>
             <div class="bg-blue-400 border border-gray-400 h-auto m-4 text-center" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
                 <h3>{{DisplayRotatedProjects}}</h3>
@@ -132,13 +132,5 @@ export default {
 </script>
 
 <style>
-    .btns {
-        @apply border border-gray-400 h-8 w-28 m-1 rounded-md
-    }
-    .projects {
-        @apply border border-gray-400 h-16 w-36 m-2
-    }
-    .tech {
-        @apply border border-gray-400 h-16 w-16 m-2 justify-self-center
-    }
+
 </style>
