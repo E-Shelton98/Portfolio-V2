@@ -90,8 +90,11 @@
                 <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Click to Restart Rotating Projects</div></div>
             </div>
         </div>
-        <div class="border border-gray-900 rounded-lg m-4 grid grid-rows-7 grid-cols-2">
-            <section class="m-2 row-start-1 row-end-7 col-start-2 col-end-3">I'm currently looking for new opportunities, so if you would like to speak more about working together please reach me at 231-519-0315 or by emailing codewerik@gmail.com</section>
+        <div class="border border-gray-900 rounded-lg m-4">
+            <section class="m-2 text-center text-xl underline">Lets Work Together</section>
+            <section class="m-2 text-center">Email: codewerik@gmail.com</section>
+            <section class="m-2 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
+            <section class="m-2 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section>
             
         </div>
     </div>
