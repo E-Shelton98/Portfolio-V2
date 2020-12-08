@@ -18,26 +18,36 @@
         <div>
             <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-2" v-if="Technologies">
                 <h3 class="text-center">Technologies</h3>
-                <div class="m-1 grid grid-rows-3 grid-cols-4">
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-4"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-1"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-2"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-3"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-4"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-1"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-2"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-3"></div>
-                    <div class="border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-3 col-start-4"></div>
+                <div class="m-1 grid grid-rows-2 grid-cols-4">
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2"></div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png' alt="React.js logo" class="pt-2"></div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3">
+                        <img src="https://pbs.twimg.com/profile_images/1278691829135876097/I4HKOLJw_400x400.png" alt="tailwindCSS logo" class="h-14 pl-2 pt-2">
+                    </div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" alt="ruby logo" class="h-12 pt-2 pl-2">
+                    </div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-1">
+                        <img src="https://miro.medium.com/max/800/1*eRErB-NQYgwF52eUUK_kkQ.png" alt="rails logo" class="p-2">
+                    </div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="python logo" class="p-2">
+                    </div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-3">
+                        <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++ logo" class="p-3">
+                    </div>
+                    <div class="bg-white border border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql logo" class="p-2">
+                    </div>
                 </div>
             </div>
-            <div class="border border-gray-400 h-auto m-4 p-4 text-center" v-if="Hobbies">
+            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-center" v-if="Hobbies">
                 <h3>Hobbies</h3>
                 <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam pariatur vero deserunt dolorem rem repellat. Ipsam corporis sit corrupti excepturi aut commodi. Necessitatibus repellat sapiente magni nobis ipsa consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat harum esse dolores perferendis minus quo tempore est illo dolor corrupti commodi eum fugit fugiat voluptates. Exercitationem molestiae libero accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est iure ipsum repellendus dolor enim, id mollitia consectetur excepturi, doloribus sequi voluptate ratione! Magnam nulla labore repellat, repellendus eaque veritatis eum.</section>
             </div>
-            <div class="border border-gray-400 h-auto m-4 p-4 text-center" v-if="Life">
+            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-center" v-if="Life">
                 <h3>Life</h3>
                 <section>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsam pariatur vero deserunt dolorem rem repellat. Ipsam corporis sit corrupti excepturi aut commodi. Necessitatibus repellat sapiente magni nobis ipsa consequatur? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellat harum esse dolores perferendis minus quo tempore est illo dolor corrupti commodi eum fugit fugiat voluptates. Exercitationem molestiae libero accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est iure ipsum repellendus dolor enim, id mollitia consectetur excepturi, doloribus sequi voluptate ratione! Magnam nulla labore repellat, repellendus eaque veritatis eum.</section>
             </div>
@@ -82,11 +92,13 @@ export default {
     name: 'AppHome',
     data () {
         return {
+            SheetAsJSON: 'https://spreadsheets.google.com/feeds/list/1K-_6L0kigNrVAYvP_9uw2-4E-tnn1VQ0RTahYK_4Rd0/od6/public/values?alt=json',
             Technologies: false,
             Hobbies: false,
             Life: false,
             DisplayRotatedProjects: 1,
-            DisplayStaticProject: 0
+            DisplayStaticProject: 0,
+            projectList: [],
         }
     },
     created () {
@@ -123,10 +135,6 @@ export default {
             this.DisplayRotatedProjects = 1
             this.DisplayStaticProject = 0
         },
-        visibilityChanged (isVisible, entry) {
-            this.isVisible = isVisible
-            console.log(entry)
-        }
     }
 }
 </script>
