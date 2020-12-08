@@ -86,15 +86,9 @@
                 <div @click="restartRotatingProjects()">Click to Restart Rotating Projects</div>
             </div>
         </div>
-        <div class="border border-gray-400 m-4 grid grid-rows-7 grid-cols-2">
-            <section class="border border-gray-400 m-2 row-start-1 row-end-7 col-start-2 col-end-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam aperiam iusto, ipsa repudiandae velit est cupiditate magni cum enim! Est quae nam eum, ad ipsum magnam mollitia magni quas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum debitis officia nihil commodi praesentium.</section>
-            <label class="border border-gray-400 h-12 w-auto row-start-1 col-start-1 m-4"></label>
-            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-2 col-start-1">
-            <label class="border border-gray-400 h-12 w-auto row-start-3 col-start-1 m-4"></label>
-            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-4 col-start-1">
-            <label class="border border-gray-400 h-12 w-auto row-start-5 col-start-1 m-4"></label>
-            <input type="text" class="border border-gray-400 h-12 w-auto m-4 row-start-6 col-start-1">
-            <submit class="border border-gray-400 h-12 w-auto m-2 row-start-7 col-start-1 col-span-2"></submit>
+        <div class="border border-gray-900 rounded-lg m-4 grid grid-rows-7 grid-cols-2">
+            <section class="m-2 row-start-1 row-end-7 col-start-2 col-end-3">I'm currently looking for new opportunities, so if you would like to speak more about working together please reach me at 231-519-0315 or by emailing codewerik@gmail.com</section>
+            
         </div>
     </div>
 </template>
@@ -150,7 +144,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
