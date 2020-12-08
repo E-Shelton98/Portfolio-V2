@@ -20,7 +20,8 @@
                 <h3 class="text-center">Technologies</h3>
                 <div class="m-1 grid grid-rows-2 grid-cols-4">
                     <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2"></div>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2">
+                        <section>Hello There</section></div>
                     <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2">
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png' alt="React.js logo" class="pt-2"></div>
                     <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3">
@@ -54,20 +55,21 @@
         </div>
         <div class="my-8">
             <section class="text-center">Projects</section>
-            <section class="text-center">Click a picture to stop rotation</section>
+            <section class="text-center">Click a project number to stop the rotation</section>
             <div class="h-24 my-4 flex justify-around items-center">
-                <div class="border border-gray-400 h-auto w-36 m-2" @click="stopRotatingProjects(1)">
-                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png">
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center" @click="stopRotatingProjects(1)">
+                    <section>P1</section>
                 </div>
-                <div class="border border-gray-400 h-auto w-36 m-2" @click="stopRotatingProjects(2)">
-                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="h-12">
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center" @click="stopRotatingProjects(2)">
+                    <section>P2</section>
                 </div>
-                <div class="border border-gray-400 h-auto w-36 m-2" @click="stopRotatingProjects(3)">
-                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="p-2">
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center" @click="stopRotatingProjects(3)">
+                    <section>P3</section>
                 </div>
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-center" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
                 <h3>MTG-Deck-Maker</h3>
+                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png">
                 <section>A simple deck maker created using React for Magic: The Gathering, using Chart.js to display various graphs that give further insight to your currently created deck such as mana values, card amounts, card types, and mana color spread.
                 </section>
                 <a href="https://e-shelton-mtgdeckmaker.netlify.app">Click to View</a>
@@ -75,12 +77,14 @@
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-3 text-center" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
                 <h3>Sticky Task</h3>
+                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png">
                 <section>A group project using React, with a rails backend; the premise is that you can create tasks likewise to "sticky notes" to be able to assign to "taskers" whether they be workers, students, or children. My work was primarily in the frontend of the project, though I did help with bug fixes from time to time on the backend of the project.</section>
                 <a href="https://sticky-task.netlify.app">Click to View</a>
                 <div @click="restartRotatingProjects()">Click to Restart Rotating Projects</div>
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-center" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
                 <h3>Random Card</h3>
+                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png">
                 <section>A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
                 <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/">Click to View</a>
                 <div @click="restartRotatingProjects()">Click to Restart Rotating Projects</div>
@@ -94,7 +98,6 @@
 </template>
 
 <script>
-
 export default {
     name: 'AppHome',
     data () {
