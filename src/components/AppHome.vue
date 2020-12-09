@@ -16,42 +16,48 @@
             <section class="p-2">Click a category to learn more about me!</section>
         </div>
         <div>
-            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-2" v-if="Technologies">
-                <h3 class="text-center text-2xl underline">Technologies</h3>
-                <div class="m-1 grid grid-rows-2 grid-cols-4">
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2">
+            <transition name="fade">
+                <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-2" v-if="Technologies">
+                    <h3 class="text-center text-2xl underline">Technologies</h3>
+                    <div class="m-1 grid grid-rows-2 grid-cols-4">
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2">
+                            </div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png' alt="React.js logo" class="pt-2"></div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3">
+                            <img src="https://pbs.twimg.com/profile_images/1278691829135876097/I4HKOLJw_400x400.png" alt="tailwindCSS logo" class="h-14 pl-2 pt-2">
                         </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-2">
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png' alt="React.js logo" class="pt-2"></div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-3">
-                        <img src="https://pbs.twimg.com/profile_images/1278691829135876097/I4HKOLJw_400x400.png" alt="tailwindCSS logo" class="h-14 pl-2 pt-2">
-                    </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" alt="ruby logo" class="h-12 pt-2 pl-2">
-                    </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-1">
-                        <img src="https://miro.medium.com/max/800/1*eRErB-NQYgwF52eUUK_kkQ.png" alt="rails logo" class="p-2">
-                    </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="python logo" class="p-2">
-                    </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-3">
-                        <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++ logo" class="p-3">
-                    </div>
-                    <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql logo" class="p-2">
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" alt="ruby logo" class="h-12 pt-2 pl-2">
+                        </div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-1">
+                            <img src="https://miro.medium.com/max/800/1*eRErB-NQYgwF52eUUK_kkQ.png" alt="rails logo" class="p-2">
+                        </div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="python logo" class="p-2">
+                        </div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-3">
+                            <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++ logo" class="p-3">
+                        </div>
+                        <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-2 col-start-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="postgresql logo" class="p-2">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Hobbies">
-                <h3 class="text-center text-xl">Hobbies</h3>
-                <section>Beyond just programming, I love solving problems and puzzles. I also have a passion for learning and teaching others, and greatly enjoy taking part in helping people learn new complex things. I've recently started looking into blogging, making a youtube series, and possibly some tutorials over Vue that I have recently found a passion in. Outside of the world of programming, I am passionate about all things tech, greatly enjoy cars and all things fast, love working on mechanical things such as R/C racing, and I play a healthy dose of video games when time around my many projects allow me. Other than that I would say my greatest hobby is simply spending time with my family and trying to enjoy the life that I've built or that has been handed to me.</section>
-            </div>
-            <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Life">
-                <h3 class="text-center text-xl">Life</h3>
-                <section>Born and raised in Ohio, I come from the small town life. I'm used to living in communities where everyone knows everybody, but would be very happy in a large city with a few close friends as well. I have a beautiful wife that I am blessed to call my own and currently we live close to our hometown but hope to some day move. I've been to quite a few different places in the country and have found that I love to travel when I can. I found from a young age that I was strong at problem solving, and knew from then that I would someday have a job that revolved around that talent. After working in tech support in high school I transitioned into a few various factory jobs while working on building my passion for programming.</section>
-            </div>
+            </transition>
+            <transition name="fade">
+                <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Hobbies">
+                    <h3 class="text-center text-xl">Hobbies</h3>
+                    <section>Beyond just programming, I love solving problems and puzzles. I also have a passion for learning and teaching others, and greatly enjoy taking part in helping people learn new complex things. I've recently started looking into blogging, making a youtube series, and possibly some tutorials over Vue that I have recently found a passion in. Outside of the world of programming, I am passionate about all things tech, greatly enjoy cars and all things fast, love working on mechanical things such as R/C racing, and I play a healthy dose of video games when time around my many projects allow me. Other than that I would say my greatest hobby is simply spending time with my family and trying to enjoy the life that I've built or that has been handed to me.</section>
+                </div>
+            </transition>
+            <transition name="fade">
+                <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Life">
+                    <h3 class="text-center text-xl">Life</h3>
+                    <section>Born and raised in Ohio, I come from the small town life. I'm used to living in communities where everyone knows everybody, but would be very happy in a large city with a few close friends as well. I have a beautiful wife that I am blessed to call my own and currently we live close to our hometown but hope to some day move. I've been to quite a few different places in the country and have found that I love to travel when I can. I found from a young age that I was strong at problem solving, and knew from then that I would someday have a job that revolved around that talent. After working in tech support in high school I transitioned into a few various factory jobs while working on building my passion for programming.</section>
+                </div>
+            </transition>
         </div>
         <div class="my-8">
             <h3 class="text-center text-2xl underline">Projects</h3>
@@ -150,3 +156,14 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.fade-enter-active{
+    transition: opacity 1s ease;
+}
+
+.fade-enter-from
+{
+    opacity: 0;
+}
+</style>
