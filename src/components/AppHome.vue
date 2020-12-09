@@ -17,7 +17,7 @@
         </div>
         <div>
             <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-2" v-if="Technologies">
-                <h3 class="text-center">Technologies</h3>
+                <h3 class="text-center text-2xl underline">Technologies</h3>
                 <div class="m-1 grid grid-rows-2 grid-cols-4">
                     <div class="bg-white border-2 border-purple-900 rounded-2xl h-16 w-16 m-2 justify-self-center row-start-1 col-start-1">
                         <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png' alt="vue.js logo" class="pt-4 p-2">
