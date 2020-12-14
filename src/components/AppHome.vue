@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-gradient-to-b from-green-200 via-indigo-400 to-purple-400 p-2">
+    <div>
         <div class="border-2 border-purple-900 border-opacity-25 h-auto m-4 rounded-lg flex flex-col items-center">
+            <h1 class="text-2xl text-center pt-4">Hi! I'm Erik Shelton</h1>
             <div class="bg-white border border-green-400 h-32 w-32 my-4 rounded-full flex justify-center items-center lg:h-40 lg:w-40">
                 <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="overflow-hidden h-28 w-28 rounded-full lg:h-36 lg:w-36">
             </div>
             <div class="h-auto text-center">
-                <h1 class="text-2xl">Hi! I'm Erik Shelton</h1>
                 <h2 class="text-xl">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
             </div>
             <div class="m-2 flex flex-col md:flex-row">
@@ -97,7 +97,7 @@
             </div>
         </div>
         <div class="border border-gray-900 rounded-lg m-4">
-            <section class="m-2 text-center text-xl underline">Lets Work Together</section>
+            <section class="m-2 text-center text-xl underline">Let's Work Together</section>
             <section class="m-2 text-center">Email: codewerik@gmail.com</section>
             <section class="m-2 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
             <section class="m-2 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section>
@@ -108,6 +108,7 @@
 
 <script>
 export default {
+    
     name: 'AppHome',
     data () {
         return {
@@ -158,9 +159,10 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active{
+.fade-enter-active {
     transition: opacity 1s ease;
 }
+
 
 .fade-enter-from
 {
