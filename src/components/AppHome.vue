@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col lg:w-auto lg:mx-32 lg:mt-4">
-        <div class="border-2 border-purple-900 border-opacity-25 h-auto rounded-lg flex flex-col items-center">
+        <div class="h-auto rounded-lg flex flex-col items-center">
             <h1 class="text-2xl text-center pt-4">Hi! I'm Erik Shelton</h1>
             <div class="bg-white border border-green-400 h-32 w-32 my-4 rounded-full flex justify-center items-center lg:h-40 lg:w-40">
                 <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="overflow-hidden h-28 w-28 rounded-full lg:h-36 lg:w-36">
@@ -49,13 +49,13 @@
             <transition name="fade">
                 <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Hobbies">
                     <h3 class="text-center text-xl">Hobbies</h3>
-                    <section>Beyond just programming, I love solving problems and puzzles. I also have a passion for learning and teaching others, and greatly enjoy taking part in helping people learn new complex things. I've recently started looking into blogging, making a youtube series, and possibly some tutorials over Vue that I have recently found a passion in. Outside of the world of programming, I am passionate about all things tech, greatly enjoy cars and all things fast, love working on mechanical things such as R/C racing, and I play a healthy dose of video games when time around my many projects allow me. Other than that I would say my greatest hobby is simply spending time with my family and trying to enjoy the life that I've built or that has been handed to me.</section>
+                    <section>Beyond just programming, I love solving problems and puzzles. I also have a passion for learning and teaching others, and greatly enjoy taking part in helping people learn new complex things. I've recently started looking into blogging, making a youtube series, and possibly some tutorials over Vue that I have recently found a passion in. Outside of the world of programming, I am passionate about all things tech, greatly enjoy cars and all things fast, love working on mechanical things such as R/C racing, and I play a healthy dose of video games when time around my many projects allow me.</section>
                 </div>
             </transition>
             <transition name="fade">
                 <div class="border border-purple-900 border-opacity-50 rounded-lg h-auto m-4 p-4 text-justify" v-if="Life">
                     <h3 class="text-center text-xl">Life</h3>
-                    <section>Born and raised in Ohio, I come from the small town life. I'm used to living in communities where everyone knows everybody, but would be very happy in a large city with a few close friends as well. I have a beautiful wife that I am blessed to call my own and currently we live close to our hometown but hope to some day move. I've been to quite a few different places in the country and have found that I love to travel when I can. I found from a young age that I was strong at problem solving, and knew from then that I would someday have a job that revolved around that talent. After working in tech support in high school I transitioned into a few various factory jobs while working on building my passion for programming.</section>
+                    <section>Born and raised in Ohio, I come from the small town life. I'm used to living in communities where everyone knows everybody, but would be very happy in a large city with a few close friends as well. I have a beautiful wife that I am blessed to call my own and currently we live close to our hometown but hope to some day move. I've been to quite a few different places in the country and have found that I love to travel when I can. I found from a young age that I was strong at problem solving, and knew from then that I would someday have a job that revolved around that talent.</section>
                 </div>
             </transition>
         </div>
@@ -63,14 +63,14 @@
             <h3 class="text-center text-2xl underline">Projects</h3>
             <section class="text-center italic">Click a project number to stop the rotation</section>
             <div class="h-auto my-4 flex justify-around items-center">
-                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center lg:h-16 lg:w-16" @click="stopRotatingProjects(1)">
-                    <section>P1</section>
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-20 m-2 flex justify-center items-center" @click="stopRotatingProjects(1)">
+                    <section>Project 1</section>
                 </div>
-                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center lg:h-16 lg:w-16" @click="stopRotatingProjects(2)">
-                    <section>P2</section>
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-20 m-2 flex justify-center items-center" @click="stopRotatingProjects(2)">
+                    <section>Project 2</section>
                 </div>
-                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-12 m-2 flex justify-center items-center lg:h-16 lg:w-16" @click="stopRotatingProjects(3)">
-                    <section>P3</section>
+                <div class="bg-green-500 border border-green-400 rounded-md h-12 w-20 m-2 flex justify-center items-center" @click="stopRotatingProjects(3)">
+                    <section>Project 3</section>
                 </div>
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
@@ -95,11 +95,6 @@
                 <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
                 <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Click to Restart Rotating Projects</div></div>
             </div>
-        </div>
-        <div class="border border-gray-900 rounded-lg m-4">
-            <section class="m-2 text-center text-xl underline">Socials</section>
-            <div><section class="m-2 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
-            <section class="m-2 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section></div>
         </div>
     </div>
 </template>

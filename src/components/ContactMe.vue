@@ -1,28 +1,44 @@
 <template>
-    <form class="border border-gray-900 rounded-lg m-4 flex flex-col p-4" @submit.prevent="sendEmail">
+    <form class="border border-gray-900 rounded-lg mt-4 lg:mx-32 flex flex-col p-4" @submit.prevent="sendEmail">
         <h3 class="text-center underline text-xl mb-2">Send me an Email</h3>
         <label>Name</label>
-        <input type="text" name="user_name">
+        <input class="sm:w-72" type="text" name="user_name">
         <label>Email</label>
-        <input type="email" name="user_email">
+        <input class="sm:w-72" type="email" name="user_email">
         <label>Message</label>
         <textarea name="message"></textarea>
         <input class="mt-4 bg-green-500 border border-gray-500 h-8 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" type="submit" value="Send">
+        <section v-if="EmailSent">Email Sent!</section>
     </form>
+    <div class="border border-gray-900 rounded-lg mt-4 lg:mx-32">
+            <section class="m-2 text-center text-xl underline">Socials</section>
+            <div class="flex flex-col md:flex-row justify-around"><section class="m-1 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
+            <section class="m-1 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section></div>
+        </div>
 </template>
 
 <script>
 import emailjs from 'emailjs-com'
 
 export default {
+    
+    name: 'ContactMe',
+    data () {
+        return {
+            EmailSent: false
+        }
+    },
     methods: {
-        sendEmail: (e) => {
+        sendEmail(e) {
             emailjs.sendForm('contact_service', 'contact_form', e.target, 'user_aGRjpPNDuxOEGbAbOKUKU')
-            .then((result) => {
-                console.log('SUCCESS!', result.status, result.text)
+            .then(() => {
+                this.test()
             }, (error) => {
                 console.log('FAILED...', error)
             })
+        },
+        test() {
+            this.EmailSent = true
         }
     }
 }
