@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <div class="border-2 border-purple-900 border-opacity-25 h-auto m-4 rounded-lg flex flex-col items-center">
+    <div class="flex flex-col lg:w-auto lg:mx-32 lg:mt-4">
+        <div class="border-2 border-purple-900 border-opacity-25 h-auto rounded-lg flex flex-col items-center">
             <h1 class="text-2xl text-center pt-4">Hi! I'm Erik Shelton</h1>
             <div class="bg-white border border-green-400 h-32 w-32 my-4 rounded-full flex justify-center items-center lg:h-40 lg:w-40">
                 <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="overflow-hidden h-28 w-28 rounded-full lg:h-36 lg:w-36">
             </div>
             <div class="h-auto text-center">
-                <h2 class="text-xl">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
+                <h2 class="text-xl lg:p-2">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
             </div>
             <div class="m-2 flex flex-col md:flex-row">
-                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onTechClick()">Technologies</button>
-                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
-                <button class="bg-green-500 border border-green-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onLifeClick()">Life</button>
+                <button class="bg-green-500 border border-gray-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onTechClick()">Technologies</button>
+                <button class="bg-green-500 border border-gray-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
+                <button class="bg-green-500 border border-gray-500 h-8 w-28 m-1 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" @click="onLifeClick()">Life</button>
             </div>
             <section class="p-2">Click a category to learn more about me!</section>
         </div>
@@ -97,11 +97,9 @@
             </div>
         </div>
         <div class="border border-gray-900 rounded-lg m-4">
-            <section class="m-2 text-center text-xl underline">Let's Work Together</section>
-            <section class="m-2 text-center">Email: codewerik@gmail.com</section>
-            <section class="m-2 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
-            <section class="m-2 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section>
-            
+            <section class="m-2 text-center text-xl underline">Socials</section>
+            <div><section class="m-2 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
+            <section class="m-2 text-center">Connect on <a href="https://www.linkedin.com/in/erik-shelton-07a932192/" class="underline">LinkedIn</a></section></div>
         </div>
     </div>
 </template>
