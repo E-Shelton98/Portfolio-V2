@@ -8,7 +8,7 @@
         <label>Message</label>
         <textarea name="message"></textarea>
         <input class="mt-4 bg-green-500 border border-gray-500 h-8 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" type="submit" value="Send">
-        <section v-if="EmailSent">Email Sent!</section>
+        <section class="" v-if="EmailSent">Email Sent!</section>
     </form>
     <div class="border border-gray-900 rounded-lg mt-4 lg:mx-32">
             <section class="m-2 text-center text-xl underline">Socials</section>

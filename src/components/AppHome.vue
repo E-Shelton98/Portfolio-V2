@@ -75,15 +75,15 @@
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
                 <h3 class="text-center text-2xl lg:row-start-1 lg:col-start-1 lg:col-span-2">MTG-Deck-Maker</h3>
-                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-60 lg:w-96 lg:row-start-2 lg:col-start-1">
+                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-60 lg:w- lg:row-start-2 lg:col-start-1">
                 <div class="md:relative h-full p-2 lg:row-start-2 lg:col-start-2"><section class="pb-8">A simple deck maker created using React for Magic: The Gathering, using Chart.js to display various graphs that give further insight to your currently created deck such as mana values, card amounts, card types, and mana color spread.
                 </section>
                 <a href="https://e-shelton-mtgdeckmaker.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
                 <div @click="restartRotatingProjects()" class="md:absolute md:bottom-0 md:right-0 text-left">Click to Restart Rotating Projects</div></div>
             </div>
             <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
-                <h4 class="text-center text-2xl lg:row-start-1 lg:col-start-1 lg:col-span-2">Sticky Task</h4>
-                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-60 lg:w-full lg:row-start-2 lg:col-start-1">
+                <h4 class="text-center text-2xl lg:row-start-1 lg:col-start-2">Sticky Task</h4>
+                <div class="lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:w-4/5"><img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-auto lg:w-auto object-fill"></div>
                 <div class="md:relative h-full p-2 lg:row-start-2 lg:col-start-2"><section class="pb-8">A group project using React, with a rails backend; the premise is that you can create tasks likewise to "sticky notes" to be able to assign to "taskers" whether they be workers, students, or children. My work was primarily in the frontend of the project, though I did help with bug fixes from time to time on the backend of the project.</section>
                 <a href="https://sticky-task.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
                 <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Click to Restart Rotating Projects</div></div>
