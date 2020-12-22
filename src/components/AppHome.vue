@@ -2,8 +2,8 @@
     <div class="flex flex-col lg:w-auto lg:mx-32 lg:mt-4">
         <div class="h-auto rounded-lg flex flex-col items-center">
             <h1 class="text-2xl text-center pt-4">Hi! I'm Erik Shelton</h1>
-            <div class="bg-white border border-green-400 h-32 w-32 my-4 rounded-full flex justify-center items-center lg:h-40 lg:w-40">
-                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="overflow-hidden h-28 w-28 rounded-full lg:h-36 lg:w-36">
+            <div class="bg-white border border-green-400 h-40 w-40 my-4 rounded-full flex justify-center items-center overflow-hidden">
+                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="h-auto w-full rounded-full object-cover">
             </div>
             <div class="h-auto text-center">
                 <h2 class="text-xl lg:p-2">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
@@ -73,27 +73,33 @@
                     <section>Project 3</section>
                 </div>
             </div>
-            <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
-                <h3 class="text-center text-2xl lg:row-start-1 lg:col-start-1 lg:col-span-2">MTG-Deck-Maker</h3>
-                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-60 lg:w- lg:row-start-2 lg:col-start-1">
-                <div class="md:relative h-full p-2 lg:row-start-2 lg:col-start-2"><section class="pb-8">A simple deck maker created using React for Magic: The Gathering, using Chart.js to display various graphs that give further insight to your currently created deck such as mana values, card amounts, card types, and mana color spread.
+            <div class="border border-purple-900 rounded-md h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
+                <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">MTG-Deck-Maker</h3>
+                <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-full w-auto">
+                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="pr-2 h-full w-full object-contain">
+                </div>
+                <div class="md:relative h-full p-2 md:row-start-2 md:col-start-3"><section class="pb-8 pt-4">A simple deck maker created using React for Magic: The Gathering, using Chart.js to display various graphs that give further insight to your currently created deck such as mana values, card amounts, card types, and mana color spread.
                 </section>
                 <a href="https://e-shelton-mtgdeckmaker.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                <div @click="restartRotatingProjects()" class="md:absolute md:bottom-0 md:right-0 text-left">Click to Restart Rotating Projects</div></div>
+                <div @click="restartRotatingProjects()" class="md:absolute md:bottom-0 md:right-0 text-left">Restart Project Rotation</div></div>
             </div>
-            <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
-                <h4 class="text-center text-2xl lg:row-start-1 lg:col-start-2">Sticky Task</h4>
-                <div class="lg:row-start-1 lg:row-end-3 lg:col-start-1 lg:w-4/5"><img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-auto lg:w-auto object-fill"></div>
-                <div class="md:relative h-full p-2 lg:row-start-2 lg:col-start-2"><section class="pb-8">A group project using React, with a rails backend; the premise is that you can create tasks likewise to "sticky notes" to be able to assign to "taskers" whether they be workers, students, or children. My work was primarily in the frontend of the project, though I did help with bug fixes from time to time on the backend of the project.</section>
+            <div class="border border-purple-900 rounded-md h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
+                <h4 class="text-center text-2xl md:row-start-1 md:col-start-3">Sticky Task</h4>
+                <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-full w-auto object-contain">
+                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="pr-2 h-full w-full object-contain">
+                </div>
+                <div class="md:relative h-full p-2 md:row-start-2 md:col-start-3"><section class="pb-8 pt-4">A group project using React, with a rails backend; the premise is that you can create tasks likewise to "sticky notes" to be able to assign to "taskers" whether they be workers, students, or children. My work was primarily in the frontend of the project, though I did help with bug fixes from time to time on the backend of the project.</section>
                 <a href="https://sticky-task.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Click to Restart Rotating Projects</div></div>
+                <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Restart Project Rotation</div></div>
             </div>
-            <div class="border border-purple-900 rounded-md h-auto m-4 p-2 text-justify md:flex md:flex-col lg:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
-                <h3 class="text-center text-2xl lg:row-start-1 lg:col-start-1 lg:col-span-2">Random Card</h3>
-                <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="p-2 md:h-3/4 md:w-3/4 md:self-center lg:h-60 lg:w-96 lg:row-start-2 lg:col-start-1">
-                <div class="md:relative h-full p-2 lg:row-start-2 lg:col-start-2"><section class="pb-8">A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
+            <div class="border border-purple-900 rounded-md h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
+                <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">Random Card</h3>
+                <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-full w-auto">
+                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="pr-2 h-full w-full object-contain">
+                </div>
+                <div class="md:relative h-full p-2 md:row-start-2 md:col-start-3"><section class="pb-8 pt-4">A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
                 <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Click to Restart Rotating Projects</div></div>
+                <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Restart Project Rotation</div></div>
             </div>
         </div>
     </div>
