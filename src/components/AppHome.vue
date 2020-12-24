@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col lg:w-auto mt-2">
-        <div class="bg-gradient-to-br from-green-300 to-blue-300 h-auto rounded-lg grid items-center">
+    <div class="flex flex-col lg:w-auto mt-2 max-w-screen-xl">
+        <div class="bg-gradient-to-br from-green-300 to-blue-300 h-auto rounded-lg grid items-center ">
             <h1 class="text-2xl text-center pt-10 row-start-1 col-start-2 self-start justify-self-start">Hello! I'm Erik Shelton</h1>
             <div class="h-48 w-48 my-4 rounded-full flex justify-center items-center overflow-hidden row-start-1 col-start-1 justify-self-center">
                 <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="h-auto w-full rounded-full object-cover">
@@ -9,8 +9,8 @@
                 <h2 class="text-lg text-left pt-8 leading-normal">I’m a software engineer who loves solving problems and bringing difficult concepts down to a tangible level.</h2>
             </div>
         </div>
-        <div class="mt-4">
-            <div class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 p-2 flex flex-col rounded-lg h-auto">
+        <div class="mt-4 flex flex-col items-center">
+            <div class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 p-2 flex flex-col rounded-lg h-auto w-full max-w-screen-xl">
                 <h2 class="text-2xl underline text-center pb-2">About Me</h2>
                 <div class="mb-2 flex justify-center">
                     <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onTechClick()">Technologies</button>
@@ -61,7 +61,7 @@
                 </transition>
             </div>
                 
-            <div class="bg-gradient-to-bl from-green-300 via-purple-200 to-blue-300 my-4 rounded-lg">
+            <div class="bg-gradient-to-bl from-green-300 via-purple-200 to-blue-300 my-4 rounded-lg max-w-screen-xl">
                 <h3 class="text-center text-2xl underline pt-2">Projects</h3>
                 <div class="h-auto my-4 flex justify-around items-center">
                     <div class="bg-green-500 border border-green-400 rounded-md h-12 w-20 m-2 flex justify-center items-center" @click="stopRotatingProjects(1)">
@@ -76,7 +76,7 @@
                 </div>
                 <div class="rounded-md h-auto md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
                     <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">MTG-Deck-Maker</h3>
-                    <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto">
+                    <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto max-w-2xl">
                         <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="pr-2 h-full w-full object-contain">
                     </div>
                     <div class="md:relative h-72 md:h-full p-2 md:row-start-2 md:col-start-3">

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800 p-2">
+  <div class="bg-gray-800 p-2 flex flex-col items-center">
     <AppHome/>
     <ContactMe/>
   </div>
