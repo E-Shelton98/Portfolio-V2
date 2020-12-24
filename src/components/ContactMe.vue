@@ -7,7 +7,7 @@
         <input class="w-72" type="email" name="user_email">
         <label>Message</label>
         <textarea name="message"></textarea>
-        <input class="mt-4 bg-green-500 border border-gray-500 h-8 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900 focus:ring-opacity-50 focus:bg-green-300" type="submit" value="Send">
+        <input class="text-white mt-4 bg-purple-300 border border-gray-500 h-8 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50 focus:bg-gray-300" type="submit" value="Send">
         <section class="" v-if="EmailSent">Email Sent!</section>
     </form>
     <div class="border border-gray-900 rounded-lg mt-4 lg:mx-32">

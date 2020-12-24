@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-b from-green-200 via-indigo-400 to-purple-400 p-2">
+  <div class="p-2">
     <AppHome/>
     <ContactMe/>
   </div>
