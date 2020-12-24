@@ -1,5 +1,5 @@
 <template>
-    <form class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 rounded-lg lg:mx-32 flex flex-col p-4" @submit.prevent="sendEmail">
+    <form class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 rounded-lg flex flex-col p-4 w-full max-w-screen-xl" @submit.prevent="sendEmail">
         <div>
             <section class="m-2 text-center text-2xl underline">Lets Get in Touch</section>
             <div class="flex flex-col md:flex-row justify-around"><section class="m-1 text-center">View my <a href="https://github.com/E-Shelton98" class="underline">GitHub</a></section>
