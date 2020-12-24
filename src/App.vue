@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2">
+  <div class="bg-gray-800 p-2">
     <AppHome/>
     <ContactMe/>
   </div>

@@ -13,9 +13,9 @@
             <div class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 p-2 flex flex-col rounded-lg h-auto">
                 <h2 class="text-2xl underline text-center pb-2">About Me</h2>
                 <div class="mb-2 flex justify-center">
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-purple-200" @click="onTechClick()">Technologies</button>
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-purple-200" @click="onHobbiesClick()">Hobbies</button>
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-purple-200" @click="onLifeClick()">Life</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onTechClick()">Technologies</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onLifeClick()">Life</button>
                 </div>
                 <transition name="fade">
                 <div class="bg-blue-300 rounded-lg h-auto pt-2 mb-2" v-if="Technologies">
@@ -61,9 +61,8 @@
                 </transition>
             </div>
                 
-            <div class="my-8">
-                <h3 class="text-center text-2xl underline">Projects</h3>
-                <section class="text-center italic">Click a project number to stop the rotation</section>
+            <div class="bg-gradient-to-bl from-green-300 via-purple-200 to-blue-300 my-4 rounded-lg">
+                <h3 class="text-center text-2xl underline pt-2">Projects</h3>
                 <div class="h-auto my-4 flex justify-around items-center">
                     <div class="bg-green-500 border border-green-400 rounded-md h-12 w-20 m-2 flex justify-center items-center" @click="stopRotatingProjects(1)">
                         <section>Project 1</section>
@@ -75,7 +74,7 @@
                         <section>Project 3</section>
                     </div>
                 </div>
-                <div class="border border-purple-900 rounded-md h-auto md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
+                <div class="rounded-md h-auto md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 1 || DisplayStaticProject === 1">
                     <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">MTG-Deck-Maker</h3>
                     <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto">
                         <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607389608/Screen_Shot_2020-12-07_at_8.05.42_PM_sa8mzg.png" class="pr-2 h-full w-full object-contain">
@@ -83,29 +82,27 @@
                     <div class="md:relative h-72 md:h-full p-2 md:row-start-2 md:col-start-3">
                         <section class="pb-8 pt-4">A simple deck maker created using React for Magic: The Gathering, using Chart.js to display various graphs that give further insight to your currently created deck such as mana values, card amounts, card types, and mana color spread.
                         </section>
-                        <a href="https://e-shelton-mtgdeckmaker.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                    <div @click="restartRotatingProjects()" class="md:absolute md:bottom-0 md:right-0 text-left">Restart Project Rotation</div>
+                        <a href="https://e-shelton-mtgdeckmaker.netlify.app" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
             </div>
-            <div class="border border-purple-900 rounded-md md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
+            <div class="rounded-md md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
                 <h4 class="text-center text-2xl md:row-start-1 md:col-start-3">Sticky Task</h4>
                 <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto object-contain">
                     <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="pr-2 h-full w-full object-contain">
                 </div>
                 <div class="md:relative h-72 md:h-full p-2 md:row-start-2 md:col-start-3">
                     <section class="pb-8 pt-4">A group project using React, with a rails backend; the premise is that you can create tasks likewise to "sticky notes" to be able to assign to "taskers" whether they be workers, students, or children. My work was primarily in the frontend of the project, though I did help with bug fixes from time to time on the backend of the project.</section>
-                    <a href="https://sticky-task.netlify.app" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                    <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Restart Project Rotation</div>
+                    <a href="https://sticky-task.netlify.app" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
             </div>
-            <div class="border border-purple-900 rounded-md md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
-                <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">Random Card</h3>
-                <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto">
+            <div class="h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
+                <h3 class="text-center text-2xl md:row-start-1 md:col-start-2">Random Card</h3>
+                <div class="md:row-start-1 md:row-end-2 h-48 md:h-full w-96">
                     <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="pr-2 h-full w-full object-contain">
                 </div>
-                <div class="md:relative h-72 md:h-full p-2 md:row-start-2 md:col-start-3"><section class="pb-8 pt-4">A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
-                <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/" class=" md:absolute md:bottom-0 md:left-0">Click to View</a>
-                    <div class="md:absolute md:bottom-0 md:right-0 text-left" @click="restartRotatingProjects()">Restart Project Rotation</div>
+                <div class="md:relative h-72 md:h-full p-2 md:row-start-1 md:col-start-2">
+                    <section class="pb-8 pt-4">A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
+                <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
             </div>
         </div>
@@ -156,10 +153,6 @@ export default {
         stopRotatingProjects (project) {
             this.DisplayRotatedProjects = 0
             this.DisplayStaticProject = project
-        },
-        restartRotatingProjects () {
-            this.DisplayRotatedProjects = 1
-            this.DisplayStaticProject = 0
         },
     }
 }
