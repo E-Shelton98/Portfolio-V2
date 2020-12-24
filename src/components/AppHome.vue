@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col lg:w-auto mt-2 max-w-screen-xl">
         <div class="bg-gradient-to-br from-green-300 to-blue-300 h-auto rounded-lg grid items-center ">
-            <h1 class="text-2xl text-center pt-10 row-start-1 col-start-2 self-start justify-self-start">Hello! I'm Erik Shelton</h1>
-            <div class="h-48 w-48 my-4 rounded-full flex justify-center items-center overflow-hidden row-start-1 col-start-1 justify-self-center">
+            <h1 class="text-2xl text-center pt-2 md:pt-10 row-start-1 col-start-2 self-start justify-self-start">Hello! I'm Erik Shelton</h1>
+            <div class="h-32 w-32 md:h-48 md:w-48 my-4 rounded-full flex justify-center items-center overflow-hidden row-start-1 col-start-1 justify-self-center">
                 <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg" class="h-auto w-full rounded-full object-cover">
             </div>
             <div class="h-auto w-72 text-center row-start-1 col-start-2 self-center justify-self-start">
@@ -13,9 +13,9 @@
             <div class="bg-gradient-to-tl from-green-300 via-purple-200 to-blue-300 p-2 flex flex-col rounded-lg h-auto w-full max-w-screen-xl">
                 <h2 class="text-2xl underline text-center pb-2">About Me</h2>
                 <div class="mb-2 flex justify-center">
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onTechClick()">Technologies</button>
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
-                    <button class="border-2 border-black h-8 w-28 m-1 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onLifeClick()">Life</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 lg:mx-4 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onTechClick()">Technologies</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 lg:mx-4 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onHobbiesClick()">Hobbies</button>
+                    <button class="border-2 border-black h-8 w-28 m-1 lg:mx-4 rounded-md ring-2 ring-gray-400 ring-inset focus:outline-none focus:bg-green-300" @click="onLifeClick()">Life</button>
                 </div>
                 <transition name="fade">
                 <div class="bg-blue-300 rounded-lg h-auto pt-2 mb-2" v-if="Technologies">
@@ -85,7 +85,7 @@
                         <a href="https://e-shelton-mtgdeckmaker.netlify.app" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
             </div>
-            <div class="rounded-md md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
+            <div class="md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 2 || DisplayStaticProject === 2">
                 <h4 class="text-center text-2xl md:row-start-1 md:col-start-3">Sticky Task</h4>
                 <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto object-contain">
                     <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1607391604/Screen_Shot_2020-12-07_at_8.39.38_PM_snavw0.png" class="pr-2 h-full w-full object-contain">
@@ -95,12 +95,12 @@
                     <a href="https://sticky-task.netlify.app" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
             </div>
-            <div class="h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
-                <h3 class="text-center text-2xl md:row-start-1 md:col-start-2">Random Card</h3>
-                <div class="md:row-start-1 md:row-end-2 h-48 md:h-full w-96">
-                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="pr-2 h-full w-full object-contain">
+            <div class="md:h-96 m-4 p-2 text-justify md:grid" v-if="DisplayRotatedProjects === 3 || DisplayStaticProject === 3">
+                <h3 class="text-center text-2xl md:row-start-1 md:col-start-3">Random Card</h3>
+                <div class="md:row-start-1 md:row-end-3 md:col-start-1 md:col-end-3 h-48 md:h-full w-auto object-contain">
+                    <img src="https://res.cloudinary.com/dm5cjaisp/image/upload/v1600118869/Screen_Shot_2020-09-14_at_5.27.29_PM_gqngnd.png" class="pr-2 h-full md:h-96 w-full object-contain">
                 </div>
-                <div class="md:relative h-72 md:h-full p-2 md:row-start-1 md:col-start-2">
+                <div class="md:relative h-72 md:h-full p-2 md:row-start-2 md:col-start-3">
                     <section class="pb-8 pt-4">A Javascript program that uses a deck of cards and will deal a random card each time you click the "add a card" button.</section>
                 <a href="https://pages.git.generalassemb.ly/E-Shelton98/W02D04-HW/random_imager/" class=" md:absolute md:bottom-0 md:right-0">Click to View</a>
                 </div>
